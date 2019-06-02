@@ -6,7 +6,9 @@
     "lint": "tslint -c tslint.json --project tsconfig.json \"src/**/*.ts?(x)\" \"pages/**/*.ts?(x)\"",
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "export": "next export",
+    "deploy": "npm run build && npm run export"
   },
   "author": "Jose Burgos <jose@bqroster.com>",
   "license": "MIT",
