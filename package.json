@@ -1,0 +1,32 @@
+{
+  "name": "lindout",
+  "version": "1.0.0",
+  "description": "Lindout Project, just going up",
+  "scripts": {
+    "lint": "tslint -c tslint.json --project tsconfig.json \"src/**/*.ts?(x)\" \"pages/**/*.ts?(x)\"",
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "author": "Jose Burgos <jose@bqroster.com>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "@zeit/next-typescript": "^1.1.1",
+    "next": "^8.1.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@types/next": "^8.0.5",
+    "@types/node": "^12.0.4",
+    "@types/react": "^16.8.19",
+    "@types/react-dom": "^16.8.4",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-module-resolver": "^3.2.0",
+    "tslint": "^5.17.0",
+    "tslint-react": "^4.0.0",
+    "typescript": "^3.5.1"
+  }
+}
