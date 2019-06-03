@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { ajax } from 'rxjs/ajax';
 import Link from 'next/link';
 import Head from '~/components/head';
 import Nav from '~/components/nav';
@@ -16,12 +17,42 @@ const TabletDOM: React.SFC<TableDOMProps> =
   );
 };
 
+let myData: any;
+
+const getGitHubPage = () => {
+
+  const githubUsers = `https://api.github.com/users?per_page=2`;
+
+  ajax({
+    url: githubUsers,
+    method: 'GET',
+    async: false // this will DO the same as async/await
+  })
+  .subscribe(
+    res => {myData = res.response},
+    err => console.log(err)
+  );  
+}
+
+const GitHubData: React.SFC<{}> = () => {
+
+  getGitHubPage();
+
+  console.log('GitHub Data: ', myData);
+  
+  return (
+    <div>GITHUB FETCH DATAA</div>
+  );
+};
+
 const Home = () => (
   <div>
     <Head title="Home" />
     <Nav />
 
     <TabletDOM />
+
+    <GitHubData />
 
     <div className="hero">
       <h1 className="title">Welcome to Next!</h1>
