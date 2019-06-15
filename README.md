@@ -7,6 +7,7 @@ This is a Basic configuration to start a project based on:
 You can clone or forke this branch and use to avoid configure, just start working on your project.
 ```
 git clone https://github.com/bqroster/NextJS-TS-TSLint.git
+cd NextJS-TS-TSLint
 yarn install | npm install
 yarn dev | npm dev
 ```
