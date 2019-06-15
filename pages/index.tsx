@@ -37,9 +37,7 @@ const getGitHubPage = () => {
 const GitHubData: React.SFC<{}> = () => {
 
   getGitHubPage();
-
-  console.log('GitHub Data: ', myData);
-  
+    
   return (
     <div>GITHUB FETCH DATAA</div>
   );
