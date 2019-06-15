@@ -8,8 +8,10 @@ You can clone or forke this branch and use to avoid configure, just start workin
 
 ### Live example
 This example has NextJS Text by default and the CSS had been removed for practical purposes.
+
 [Click Here to see live example](https://peaceful-knuth-ee1fef.netlify.com/)
 
 ### Author
 Jose Burgos <jose@bqroster.com>
+
 Full Stack Developer
