@@ -5,6 +5,11 @@ This is a Basic configuration to start a project based on:
 - RxJs
 
 You can clone or forke this branch and use to avoid configure, just start working on your project.
+```
+git clone https://github.com/bqroster/NextJS-TS-TSLint.git
+yarn install | npm install
+yarn dev | npm dev
+```
 
 ### Live example
 This example has NextJS Text by default and the CSS had been removed for practical purposes.
